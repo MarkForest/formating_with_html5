@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="team.html">team</a></li>
+    </ul>
+    <pre>
+        using System;
+        using System.Collections.Generic;
+        using System.ComponentModel;
+        using System.Data;
+        using System.Drawing;
+        using System.Drawing.Drawing2D;
+        using System.Linq;
+        using System.Text;
+        using System.Threading.Tasks;
+        using System.Windows.Forms;
+
+        namespace global_transform
+        {
+            public partial class Form1 : Form
+            {
+                <strong>
+                    <del>public Form1()</del>
+                {
+                    InitializeComponent();
+                    Paint += Form1_Paint;
+                }
+
+                private void Form1_Paint(object sender, PaintEventArgs e)
+                {
+                    using (Graphics graphics = e.Graphics)
+                    {
+                        Rectangle rect = new Rectangle(30, 30, 60, 60);
+                        Pen penB = new Pen(Brushes.Blue, 4);
+                        Pen penR = ne
+                </strong>w Pen(Brushes.Red, 4);
+                    <i>
+                            //примитивы до глобольного преобразования
+                        graphics.DrawRectangle(penB, rect);
+                        graphics.DrawLine(penR, 30, 200, 200, 170);
+                        graphics.FillEllipse(Brushes.Coral, new Rectangle(100, 30, 100, 100));
+
+                        Matrix matrix = new Matrix();
+                        matrix.Scale(1.4f, 1.4f);
+                        <mark>matrix.</mark>RotateAt(-10, new PointF(0.0f, 0.0f));
+
+                        graphics.Transform = matrix;
+                        graphics.DrawRectangle(penB, rect);
+                        graphics.DrawLine(penR, 30, 200, 200, 170);
+                        graphics.FillEllipse(Br
+                    </i>ushes.Coral, new Rectangle(100, 30, 100, 100));
+        H<sub><small>2</small></sub>O
+                    }
+                }
+            }
+
+        }
+    </pre>
+</nav>
+<h1>About Page</h1>
+
+<h1>Lorem ipsum dolor.</h1>
+<p><mark>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga ipsum itaque nostrum quo repellendus rerum? Architecto doloremque nihil odio optio. A alias aliquam at autem commodi cum dolorem enim illum maxime, nam nihil omnis quidem quis reiciendis rerum, sequi tempora temporibus vel. Architecto aut eligendi exercitationem fugiat, fugit inventore labore laboriosam quibusdam vel voluptatum. Atque dicta eos eveniet ex, hic iusto laboriosam libero nemo nesciunt non numquam possimus rem sit tempora tempore temporibus totam. Ad aliquam aliquid asperiores at distinctio dolore dolorem est expedita facilis iure laboriosam maxime nemo non numquam, odio officia perferendis praesentium quod reiciendis sequi, sint suscipit tempora ut, vitae voluptatum. Expedita laborum magni optio. Accusamus ad amet aspernatur assumenda atque commodi consequuntur delectus dignissimos dolorum enim est eum eveniet facilis hic illo incidunt ipsam iure neque nisi numquam obcaecati, odit officiis pariatur perferendis perspiciatis provident quaerat quisquam ratione rem reprehenderit rerum sequi sit unde vel velit veniam voluptates. Architecto blanditiis consequatur cum ducimus earum ex libero minus vel voluptatem. Aut dicta dolore eligendi ex excepturi exercitationem iusto sequi voluptates. Accusantium atque blanditiis distinctio dolorem, doloribus earum ex expedita harum in inventore ipsam laborum laudantium magnam minus molestias nam neque nesciunt obcaecati odit officiis possimus quis quos repellendus. Amet aut eaque eveniet facere id libero magnam maiores, minima mollitia nisi nostrum quam repudiandae saepe sint, sunt tempora, unde voluptatem. Alias beatae facilis hic iusto labore nihil quis vel vitae voluptas! A ad, adipisci aliquid aperiam aspernatur commodi consequuntur corporis culpa debitis dicta dolore eius enim est explicabo fugit illum in inventore itaque iusto labore modi neque nesciunt nostrum placeat quo rem repellat sequi similique tempora temporibus tenetur velit veritatis vero vitae voluptas voluptate, voluptatibus? Architecto beatae consectetur dignissimos doloremque impedit ipsam labore magnam obcaecati officiis optio, pariatur quo velit voluptatum! Aliquam amet architecto at autem beatae consectetur cumque, cupiditate deleniti deserunt dicta dolore error, eum harum ipsum itaque magnam modi mollitia nam nemo nihil non nostrum numquam officiis reiciendis repellendus sapiente sint tenetur ut vel veritatis vitae voluptas voluptates voluptatum? Atque cupiditate dignissimos dolore, doloribus facilis harum ipsam iure necessitatibus ratione voluptatem! Ab accusamus, ad consectetur, consequatur deserunt eius maiores quidem quis vero voluptas voluptate voluptatem. Amet asperiores at, consectetur consequuntur dolore, dolorem, dolores eaque error hic id inventore ipsa iusto laudantium maxime minima mollitia nobis perspiciatis quo sint ut vitae voluptate voluptates. Aliquam amet consectetur corporis cum deleniti dicta dolor, dolorum eum fuga harum illum in nam nisi nobis non, numquam odio porro praesentium repellat similique sunt suscipit tempora tempore totam velit! Ab accusamus aperiam asperiores beatae blanditiis deleniti dignissimos doloremque eius error esse expedita explicabo facilis fugiat harum id, illo laboriosam molestiae nemo officiis quam qui quisquam voluptatum? Blanditiis, commodi consectetur dignissimos eos exercitationem explicabo officia quas? Adipisci alias autem, dolorum eius, est harum nostrum quaerat qui quia sapiente sed velit voluptatem. Aliquam, amet distinctio ea facere, fuga illo illum laborum magnam necessitatibus odit officia placeat possimus quibusdam quidem quod sapiente sequi voluptate, voluptates? Eum placeat quisquam quo unde voluptatibus. Eaque nihil pariatur reiciendis.
+</mark></p>
+</body>
+</html>
